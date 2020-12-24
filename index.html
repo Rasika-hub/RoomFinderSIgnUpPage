@@ -4,84 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome page room finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .main_wrapper{
-            min-width: 400px;
+        body{
             background-color: #000000;
-            height: 600px;
         }
-        .logo{
-            position: relative;
-            top: 20%;
-            left: 40%;
-        }
-        .txt_wrapper{
-            position: absolute;
-            top: 33%;
-            left: 30%;
-        }
-        .heading_text{
-            color: #fff;
-        }
-        .login_text{
-            margin-top: 20px;
-           
-        }
-        .login_text a{
-            text-decoration: none;
-            color: #fff;
-        }
-        .SignUp_text{
-            margin-top: 5px;
-        }
-        .SignUp_text a{
-            text-decoration: none;
-            color: #fff;
-        }
-        .website_visit_btn{
-            background-color: rgb(155, 15, 15);
-            padding: 7px 20px;
-            border: none;
-            border-radius: 8px;
-            margin-top: 20px;
-            color: #fff;
-            font-weight: 500;
-            cursor: pointer;
-        }
-        .website_visit_btn a{
-            text-decoration: none;
-            color: #fff;
-        }
+       .container .row .col img{
+        width: 50px;
+        margin: auto;    
+        display: block;
+       }
+       .container{
+           margin-top: 10%;
+       }
+       .Welcome_text{
+           margin-top: 5px;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+      
     </style>
 </head>
 <body>
-    <div class="main_wrapper">
-        <div class="logo">
-            <img src="logo.png" alt="logo" width="50px">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center text-white">
+                <a href="https://rasika-hub.github.io/RoomFinder/"><img src="logo.png" alt="logo" width="50px"></a>
+                <p class="Welcome_text">Welcome to Room Finder</p>
+            </div>
         </div>
-        <div class="txt_wrapper">
-            <h3 class="heading_text">
-                Welcome to Room<br /> Finder
-            </h3>
-            <div class="login_text">
-            <a href="#">
-                    Log in
-                </a>
+        <div class="row">
+            <div class="col text-center text-white">
+                <a href="#">Log in</a>               
             </div>
-            <div class="SignUp_text">
-            <a href="#">
-                    Sign Up
-                </a>
+        </div>
+        <div class="row">
+            <div class="col text-center text-white">
+                <a href="#"> Sign Up</a>
             </div>
-                <button class="website_visit_btn">
-                    <a href="#">Visit Web Site</a>
-                </button>
+        </div>
+        <div class="row">
+            <div class="col text-center text-white">
+                <a href="#"> Don't Have an Account ? Register Here</a>
+            </div>
         </div>
     </div>
 </body>
